@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Group Leaver</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: #2c2f33;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 20px;
+        }
+        h1 {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .header-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px auto;
+            border-radius: 8px;
+        }
+        .container {
+            background-color: #36393f;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            min-height: 400px;
+        }
+        input[type="password"], input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #40444b;
+            color: #ffffff;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #7289da, #5b6eae);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: linear-gradient(135deg, #8e9ce8, #6f7cb8);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        button:disabled {
+            background-color: #4f545c;
+            cursor: not-allowed;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #2c2f33;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-line;
+            min-height: 200px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="無題90_20250910211044.png" alt="Header Image" class="header-image">
+    <div class="container">
+        <h1>ozeu Group Leaver</h1>
+        
+        <label for="token">Discord token:</label>
+        <input type="password" id="token" placeholder="tokenを入力してください">
+        
+        <label for="newGroupName">変更後のグループ名 (空白の場合は変更せずに離脱):</label>
+        <input type="text" id="newGroupName" placeholder="">
+        
+        <label for="newGroupIcon">グループアイコン画像 (オプション):</label>
+        <input type="file" id="newGroupIcon" accept="image/*">
+        
+        <button onclick="renameAndLeaveGroups()" id="executeBtn">グループ名・アイコン変更→離脱</button>
+        
+        <div id="output"></div>
+    </div>
+
+    <!-- JavaScriptを外部ファイルから読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
